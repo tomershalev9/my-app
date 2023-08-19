@@ -42,13 +42,14 @@ spec:
             }
         }
 
-        // stage('Run Containers with Docker Compose') {
-        //     steps {
-        //         script {
-        //             sh 'docker-compose up'
-        //         }
-        //     }
-        // }
+        stage('Run Containers with Docker Compose') {
+            steps {
+                script {
+                    // sh 'docker-compose up'
+                    sh 'docker context ls'
+                }
+            }
+        }
         
     }
 }
