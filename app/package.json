@@ -1,0 +1,9 @@
+{
+  "name": "worktask-app",
+  "version": "1.0.0",
+  "description": "Hello World App with Apples",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.0"
+  }
+}

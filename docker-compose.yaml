@@ -1,0 +1,16 @@
+x-aws-vpc: "vpc-08a9aafc8fde599bb"
+services:
+  web:
+    image: tomershalev9/myapp:web
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+    
+
+
