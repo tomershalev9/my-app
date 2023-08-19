@@ -22,7 +22,7 @@ This repository contains scripts and configuration files to set up and deploy a 
 2. Access Jenkins in your browser:
 Open your web browser and navigate to http://localhost:8080
 
-    The username is: admin. <br />
+    The username is: admin <br />
     To get the password run:
 
    ```bash
@@ -44,9 +44,10 @@ Open your web browser and navigate to http://localhost:8080
 
 # Project Structure
 app/ : Contains the Node.js application files, and the Dockerfile I used to build the app's image. <br />
-mongodb/ : Contains the data for the DB and the Dockerfile I used to build the mongo image. <br />
-terraform/ : Contains terraform files in case you want to run it with terraform.  <br />
 docker-compose.yml: Docker Compose file you can use to set up the containers locally before deploying it on AWS. <br />
+Jenkinsfile- Use this file to create your pipeline.
+setup.sh- If you only want to run the containers locally' run ./setup.sh .
+delete.sh- If you ran the containers locally' run ./delete.sh to delete the containers and the images.
 # Customization
 Don't forget to change the 'x-aws-vpc' value in the 'docker-compose.yaml' to your VPC. <br />
 Add your AWS token ccredentials as secret text in Jenkins. First ID: AWS_ACCESS_KEY_ID, Second ID: AWS_SECRET_ACCESS_KEY <br />
