@@ -38,6 +38,7 @@ spec:
                 script {
                     sh '/usr/local/bin/docker context create ecs ecscontext --from-env'
                     sh 'docker context use ecscontext'
+                    sh 'docker context ls'
                 }
             }
         }
