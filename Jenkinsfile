@@ -45,8 +45,7 @@ spec:
         stage('Run Containers with Docker Compose') {
             steps {
                 script {
-                    // sh 'docker-compose up'
-                    sh 'docker context ls'
+                    sh 'docker compose up'
                 }
             }
         }
